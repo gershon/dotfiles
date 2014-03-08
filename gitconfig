@@ -1,0 +1,27 @@
+[hub]
+        protocol = https
+[user]
+        name = Paul Launay
+        email = launay.p@gmail.com
+[alias]
+        co = checkout
+	ca = commit --amend
+	st = status
+	b = branch
+	
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore
+        editor = emacs
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
