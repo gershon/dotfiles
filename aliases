@@ -1,35 +1,33 @@
-# Emacs
-alias e="emacs -nw"
-alias econfig="e ~/.emacs"
-
-# Navigation
+# nav
 alias ..="cd .."
 alias ...="cd ../.."
-alias W="~/Work/"
+alias W="cd ~/Work/"
+alias D="cd ~/Downloads"
+alias h="history"
 
-# Edit configs
-alias zshconfig="e ~/.zshrc"
-alias ohmyzshconfih="e ~/.oh-my-zsh"
-alias aliasconfig="e ~/.aliases"
-alias zshsource="source ~/.zshrc"
+# ls
+alias l="ls --color"
+alias ll="ls -lF --color"
+alias la="ls -laF --color"
+alias ls="command ls --color"
 
-# Git
+# unix
+alias e="$EDITOR"
+
+# git
 alias g="git"
-alias gconfig="e ~/.gitconfig"
-alias st="status"
 
-# Rubygem
-alias gemconfig="e ~/.gemrc"
+# bundle
+alias b="bundle"
 alias be="bundle exec"
 
 # Heroku
 alias h="heroku"
-alias hpush="g push heroku master"
-alias hpull="g pull heroku master"
+alias hlog="heroku logs -t"
 
 # Rails
 alias r="rails"
-alias fs="foreman start"
+alias f="foreman"
 alias devlog="tail -f log/development.log"
 
 # Google
@@ -37,6 +35,3 @@ chrome="google-chrome"
 
 # IP
 alias ips="ifconfig | ruby -ne 'puts $1 if /dr:(\S+)/'"
-
-# Tar
-alias untar="tar -xvf"
