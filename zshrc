@@ -34,7 +34,8 @@ bindkey "^R" history-incremental-search-backward
 bindkey "^P" history-search-backward
 bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
-bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
+bindkey ";5C" forward-word
+bindkey ";5D" backward-word
 
 # use emacs as the visual editor
 export VISUAL="emacs -nw"
@@ -57,7 +58,8 @@ gconftool-2 --set "/apps/gnome-terminal/profiles/Default/foreground_color" --typ
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # load rbenv if available
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 if which rbenv &>/dev/null ; then
   eval "$(rbenv init - --no-rehash)"
 fi
-
