@@ -1,9 +1,6 @@
 # nav
 alias ..="cd .."
 alias ...="cd ../.."
-alias W="cd ~/Work/"
-alias D="cd ~/Downloads"
-alias h="history"
 
 # ls
 alias l="ls --color --group-directories-first"
@@ -17,15 +14,13 @@ alias e="$EDITOR"
 # git
 alias g="git"
 
-# bundle
+# bundler
 alias b="bundle"
 alias be="bundle exec"
 
-# Heroku
+# heroku
 alias h="heroku"
 alias hlog="heroku logs -t"
 
-# Rails
+# rails
 alias r="rails"
-alias devlog="tail -f log/development.log"
-
