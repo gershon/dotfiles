@@ -6,10 +6,10 @@ alias D="cd ~/Downloads"
 alias h="history"
 
 # ls
-alias l="ls --color"
-alias ll="ls -lF --color"
-alias la="ls -laF --color"
-alias ls="command ls --color"
+alias l="ls --color --group-directories-first"
+alias ll="ls -lF --color --group-directories-first"
+alias la="ls -laF --color --group-directories-first"
+alias ls="command ls --color --group-directories-first"
 
 # unix
 alias e="$EDITOR"
@@ -27,11 +27,5 @@ alias hlog="heroku logs -t"
 
 # Rails
 alias r="rails"
-alias f="foreman"
 alias devlog="tail -f log/development.log"
 
-# Google
-chrome="google-chrome"
-
-# IP
-alias ips="ifconfig | ruby -ne 'puts $1 if /dr:(\S+)/'"
